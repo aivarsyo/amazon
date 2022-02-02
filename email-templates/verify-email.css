@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #585d6a;
+  font-family: arial, "sans-serif";
+  font-weight: 400;
+  border-collapse: collapse;
+}
+
+img {
+  width: 150px;
+  vertical-align: middle;
+}
+
+th {
+  font-size: 26px;
+  font-weight: 400;
+  width: 50%;
+  padding: 36px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+td {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=verify-email.css.map */
