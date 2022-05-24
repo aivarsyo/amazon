@@ -1,4 +1,4 @@
-<?php $link = 'http://localhost:8888/amazon/verify-email.php?key=e68ec996ced412fad8abc63ecf9b0174&user_id=58';?>
+<?php $link = 'http://localhost:8888/amazon/verify-email.php?key=26821f8995cf8a78551719f5c9754c11&user_id=59';?>
         <!DOCTYPE html>
 <html>
 
