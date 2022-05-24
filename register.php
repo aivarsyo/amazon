@@ -12,7 +12,7 @@
 
 <body>
     <header id="signin-header">
-        <img src="images/amazon-logo.png" alt="logo">
+        <a href="./"><img src="images/logo.png" alt="logo"></a>
     </header>
 
     <main id="signin-main">
@@ -39,7 +39,7 @@
                 </div>
                 <label for="password_again">Re-enter password</label>
                 <input type="password" name="password_again" required minlength="6" maxlength="20">
-                <input class="yellow-btn btn" type="submit" value="Create your Amazon account">
+                <input class="yellow-btn btn" type="submit" value="Create your Not Amazon account">
 
                 <div class="lds-ellipsis">
                     <div></div>

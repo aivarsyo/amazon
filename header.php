@@ -2,7 +2,7 @@
 
     <header id="products-header">
         <a href="./">
-            <img src="images/amazon-logo-white.png" alt="logo">
+            <img src="images/logo.png" alt="logo">
         </a>
         <div class="dropdown">
             <div class="dropdown__button">

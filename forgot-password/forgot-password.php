@@ -12,7 +12,7 @@
 
 <body>
     <header id="signin-header">
-        <img src="../images/amazon-logo.png" alt="logo">
+    <a href="../"><img src="../images/logo.png" alt="logo"></a>
     </header>
 
     <main id="signin-main">
@@ -28,7 +28,7 @@
 
             <form onsubmit="return false" id="forgot-pass-form" class="login-and-reg-form">
                 <h1>Password assistance</h1>
-                <p>Enter the email address associated with your Amazon account.</p>
+                <p>Enter the email address associated with your Not Amazon account.</p>
                 <label for="email">Email</label>
                 <input type="email" name="email" required>
                 <input class="yellow-btn btn" type="submit" value="Send email">

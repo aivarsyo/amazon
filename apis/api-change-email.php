@@ -60,8 +60,10 @@ try {
         // i need to somehow pass the variable
         $link = '$link';
         // let's send that link with a template to a new file
-        file_put_contents('../email-templates/verify-new-email-transfer.php', "<?php $link = 'http://localhost:8888/amazon/verify-new-email.php?key=$verification_key&user_id=$user_id&user_email=$email';?>
-        $template");
+        /* file_put_contents('../email-templates/verify-new-email-transfer.php', "<?php $link = 'http://localhost:8888/amazon/verify-new-email.php?key=$verification_key&user_id=$user_id&user_email=$email';?>
+        $template"); */
+        file_put_contents('../email-templates/verify-new-email-transfer.php', "<?php $link = 'https://aivars-dev.com/not-amazon/verify-new-email.php?key=$verification_key&user_id=$user_id&user_email=$email';?>
+            $template");
         // we execute our function and get a final product as html
         file_put_contents('../email-templates/verify-new-email-transfer.html', phpToHtml());
         // lets define a message and send that email

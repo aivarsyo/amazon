@@ -58,7 +58,7 @@
     <table>
         <tr>
             <th style="text-align: left;">
-                <img src="https://aivars.dk/amazon-web-dev/images/amazon-logo.png" alt="amazon-logo">
+                <img src="https://aivars-dev.com/not-amazon/images/logo.png" alt="amazon-logo">
             </th>
             <th style="text-align: right;">
                 Password assistance

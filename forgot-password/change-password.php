@@ -5,6 +5,13 @@ if (isset($_SESSION['user_name'])) {
     exit();
 }
 require_once('../private/globals.php');
+
+// define variables from url
+$verification_key = $_GET['key'];
+$user_id = $_GET['user_id'];
+//set the key and user_id in cookies, so that it can be used in the other file
+setcookie('key', $verification_key, time() + 600, "/");
+setcookie('user_id', $user_id, time() + 600, "/");
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +28,7 @@ require_once('../private/globals.php');
 
 <body>
     <header id="signin-header">
-        <img src="../images/amazon-logo.png" alt="logo">
+        <a href="../"><img src="../images/logo.png" alt="logo"></a>
     </header>
 
     <main id="signin-main">
@@ -54,10 +61,6 @@ require_once('../private/globals.php');
             }
 
             try {
-
-                $verification_key = $_GET['key'];
-                $user_id = $_GET['user_id'];
-
                 //prepare the statement
                 $user_stmt = $db->prepare("SELECT * FROM users WHERE user_id=:user_id");
                 $user_stmt->bindValue(":user_id", $user_id);
@@ -76,10 +79,6 @@ require_once('../private/globals.php');
       </section>';
                     http_response_code(400);
                     exit();
-                } else {
-                    //set the key and user_id in cookies, so that it can be used in the other file
-                    setcookie('key', $verification_key, time() + 600, "/");
-                    setcookie('user_id', $user_id, time() + 600, "/");
                 }
             } catch (Exception $ex) {
                 _res(500, ['info' => 'system under maintainance', 'error' => __LINE__]);

@@ -12,7 +12,7 @@
 
 <body>
     <header id="signin-header">
-        <img src="images/amazon-logo.png" alt="logo">
+    <a href="./"><img src="images/logo.png" alt="logo"></a>
     </header>
 
     <main id="signin-main">
@@ -47,7 +47,7 @@
                 <span></span>
             </div>
 
-            <a href="./register.php" class="btn create-account-btn">Create your Amazon account</a>
+            <a href="./register.php" class="btn create-account-btn">Create your Not Amazon account</a>
         </section>
     </main>
 
