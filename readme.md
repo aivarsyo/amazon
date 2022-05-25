@@ -1,6 +1,6 @@
-Includes all the CRUD operations with PHP and SQL database. I have implemented PHP Mail Server which sends an email when user is registered, forgets a password etc. On the user registration it sends an SMS with an approval that the user is registered. // If you wish to try this application, but don't want to enter your email, you can use https://temp-mail.org/en/ for a temporary email to receive the emails from this project. SMS sending functionality is provided only for danish mobile numbers, but if you don't have one or don't wish to enter yours, just type random 8 numbers in that field. To see the project - https://aivars-dev.com/not-amazon/
+# Simple amazon functionality with CRUD operations, image upload to the server, SMS service and PHP Mailer
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Includes all the CRUD operations with PHP and SQL database. I have implemented PHP Mail Server which sends an email when user is registered, forgets a password etc. On the user registration it sends an SMS with an approval that the user is registered. // If you wish to try this application, but don't want to enter your email, you can use https://temp-mail.org/en/ for a temporary email to receive the emails from this project. SMS sending functionality is provided only for danish mobile numbers, but if you don't have one or don't wish to enter yours, just type random 8 numbers in that field. To see the project - https://aivars-dev.com/not-amazon/
 
 
 FOR DEVELOPERS
