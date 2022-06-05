@@ -121,10 +121,10 @@ setcookie('user_id', $user_id, time() + 600, "/");
 <?php
 function send_400($error_message)
 {
-    $response = ["info" => $error_message];
-    echo json_encode($response);
-    http_response_code(400);
-    //echo $error_message;
-    exit();
+  //$response = ["info" => $error_message];
+  //echo json_encode($response);
+  //http_response_code(400);
+  _res(400, ['info' => $error_message]);
+  exit();
 }
 ?>

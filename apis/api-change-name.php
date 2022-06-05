@@ -63,9 +63,9 @@ try {
 
 function send_400($error_message)
 {
-    http_response_code(400);
-    $response = ["info" => $error_message];
-    echo json_encode($response);
-    //echo $error_message;
-    exit();
+  //$response = ["info" => $error_message];
+  //echo json_encode($response);
+  //http_response_code(400);
+  _res(400, ['info' => $error_message]);
+  exit();
 }

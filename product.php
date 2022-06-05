@@ -177,7 +177,7 @@ $productExists = false;
                     <div class="singleProduct__edit">
                         <?php if (isset($_SESSION['user_first_name']) && $_SESSION['user_is_verified'] == "1") { ?>
                             <button class="btn create-account-btn" id="edit-btn">Edit product</button>
-                            <button class="btn delete-btn" data-id="<?= $product_id ?>" onclick="deleteProduct(this.dataset.id)">Delete product</button>
+                            <button class="btn delete-btn delete-btn-functional" data-id="<?= $product_id ?>" onclick="deleteProduct(this.dataset.id)">Delete product</button>
                         <?php } elseif (isset($_SESSION['user_first_name']) && $_SESSION['user_is_verified'] == "0") { ?>
                             <button class="btn create-account-btn" disabled>Edit product</button>
                             <button class="btn delete-btn" disabled>Delete product</button>

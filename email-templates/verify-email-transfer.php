@@ -1,5 +1,5 @@
-<?php $link = 'http://localhost:8888/amazon/verify-email.php?key=3d60ff5be33479554e6536919e67d735&user_id=63';?>
-        <!DOCTYPE html>
+<?php $link = 'https://aivars-dev.com/not-amazon/verify-email.php?key=8c4dfc93259f52d38da91187e6b55d83&user_id=65';?>
+            <!DOCTYPE html>
 <html>
 
 <head>
@@ -59,7 +59,7 @@
     <table>
         <tr>
             <th style="text-align: left;">
-                <img src="https://aivars.dk/amazon-web-dev/images/amazon-logo.png" alt="amazon-logo">
+                <img src="https://aivars-dev.com/not-amazon/images/logo.png" alt="amazon-logo">
             </th>
             <th style="text-align: right;">
                 Verify your new<br> Amazon account

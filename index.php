@@ -1,10 +1,5 @@
 <?php
 session_start();
-//get all products from google documents
-require_once('shops/tsv-parser.php');
-//json decode google documents
-$shop_1 = json_decode(file_get_contents("shops/shop_1.txt"));
-$shop_2 = json_decode(file_get_contents("shops/shop_2.txt"));
 //connect db
 require_once('./private/globals.php');
 try {
@@ -35,7 +30,7 @@ try {
 </head>
 
 <body>
-<?php require_once('header.php'); ?>
+    <?php require_once('header.php'); ?>
 
     <main id="products-main">
 
@@ -63,30 +58,6 @@ try {
                     </div>
                     <p class="product__title"><?= $product['item_name'] ?></p>
                     <p class="product__price"><sup>DKK</sup><?= $product['item_price'] ?>.-</p>
-                </a>
-            <?php } ?>
-
-            <?php
-            foreach ($shop_1 as $item) {
-            ?>
-                <a href="product?id=<?= $item->id ?>" class="product">
-                    <div class="product__image">
-                        <img src="<?= "https://coderspage.com/2021-F-Web-Dev-Images/$item->image" ?>" alt="product-image">
-                    </div>
-                    <p class="product__title"><?= $item->title ?></p>
-                    <p class="product__price"><sup>DKK</sup><?= $item->price ?>.-</p>
-                </a>
-            <?php } ?>
-
-            <?php
-            foreach ($shop_2 as $item) {
-            ?>
-                <a href="product?id=<?= $item->id ?>" class="product">
-                    <div class="product__image">
-                        <img src="<?= "https://coderspage.com/2021-F-Web-Dev-Images/$item->image" ?>" alt="product-image">
-                    </div>
-                    <p class="product__title"><?= $item->title_en ?></p>
-                    <p class="product__price"><sup>DKK</sup><?= $item->price ?>.-</p>
                 </a>
             <?php } ?>
 

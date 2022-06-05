@@ -100,9 +100,11 @@ require_once('private/globals.php');
 
 function send_400($error_message)
 {
-    $response = ["info" => $error_message];
-    echo json_encode($response);
-    http_response_code(400);
+  //$response = ["info" => $error_message];
+  //echo json_encode($response);
+  //http_response_code(400);
+  _res(400, ['info' => $error_message]);
+  exit();
 }
 
 function send_200($message)
